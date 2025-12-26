@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+</head>
+<body class="h-screen flex">
+
+  <!-- USERS LIST -->
+  <div class="w-1/4 bg-gray-900 text-white p-4">
+    <h2 class="text-xl mb-4">Users</h2>
+    <ul id="usersList" class="space-y-2"></ul>
+  </div>
+
+  <!-- CHAT AREA -->
+  <div class="w-3/4 flex flex-col">
+    
+    <div id="messages" class="flex-1 p-4 overflow-y-auto border-b"></div>
+
+    <p id="typing" class="text-sm text-gray-500 px-4"></p>
+
+    <input
+      id="messageInput"
+      type="text"
+      placeholder="Type message and press Enter"
+      class="p-3 border-t outline-none"
+    />
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>
