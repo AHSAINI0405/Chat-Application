@@ -1,3 +1,4 @@
+const API="https://chat-application-phal.onrender.com";
 async function register() {
   await fetch(`${API}/api/auth/register`, {
     method: "POST",

@@ -1,5 +1,4 @@
-require('dotenv').config();
-const API=process.env.URL;
+const API="https://chat-application-phal.onrender.com";
 const token = localStorage.getItem("token");
 const socket = io(process.env.URL, {
   auth: { token }

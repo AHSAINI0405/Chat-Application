@@ -2,6 +2,7 @@
 const token = localStorage.getItem("token");
 const myId = localStorage.getItem("userId");
 
+const API="https://chat-application-phal.onrender.com";
 if (!token || !myId) {
   alert("Please login first");
   window.location.href = "login.html";

@@ -1,3 +1,4 @@
+const API="https://chat-application-phal.onrender.com";
 async function login() {
   const res = await fetch(`${API}/api/auth/login`, {
     method: "POST",
