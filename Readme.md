@@ -81,7 +81,7 @@ Chat App/
 
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/chat-app.git
+git clone https://github.com/AHSAINI0405/Chat-Application.git
 cd chat-app
 
 2️⃣ Backend Setup
