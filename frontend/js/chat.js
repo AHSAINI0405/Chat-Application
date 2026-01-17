@@ -1,15 +1,16 @@
 // ===== AUTH GUARD =====
+const URL="https://chat-application-phal.onrender.com";
 const token = localStorage.getItem("token");
 const myId = localStorage.getItem("userId");
 
-const API="https://chat-application-phal.onrender.com";
+
 if (!token || !myId) {
   alert("Please login first");
   window.location.href = "login.html";
 }
 
 // ===== SOCKET CONNECTION =====
-const socket = io(`${API}`, {
+const socket = io("https://chat-application-phal.onrender.com", {
   auth: { token }
 });
 

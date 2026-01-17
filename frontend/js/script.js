@@ -1,6 +1,6 @@
 const API="https://chat-application-phal.onrender.com";
 const token = localStorage.getItem("token");
-const socket = io(process.env.URL, {
+const socket = io(API, {
   auth: { token }
 });
 
