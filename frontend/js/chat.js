@@ -8,7 +8,7 @@ if (!token || !myId) {
 }
 
 // ===== SOCKET CONNECTION =====
-const socket = io("http://localhost:5000", {
+const socket = io(`${API}`, {
   auth: { token }
 });
 
@@ -21,7 +21,7 @@ const typing = document.getElementById("typing");
 let selectedUser = null;
 
 // ===== FETCH USERS =====
-fetch("http://localhost:5000/api/users", {
+fetch(`${URL}/api/users`, {
   headers: {
     Authorization: `Bearer ${token}`
   }
